@@ -1,0 +1,16 @@
+{
+  "extends": "expo/tsconfig.base", // Extends from Expo's base TypeScript config
+  "compilerOptions": {
+    "strict": true, // Makes TypeScript more strict about errors
+    "paths": {
+      "@/*": ["./*"] // Allows you to import modules with @/ syntax
+    }
+  },
+  "include": [
+    "**/*.ts", // Include all TypeScript files
+    "**/*.tsx", // Include all TypeScript React files
+    ".expo/types/**/*.ts", // Include Expo's type definitions
+    "expo-env.d.ts", // Include environment types
+    "nativewind-env.d.ts" // Include Nativewind types
+  ]
+}
